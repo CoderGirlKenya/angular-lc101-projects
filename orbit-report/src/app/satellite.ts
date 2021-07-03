@@ -1,4 +1,4 @@
-import { UrlWithStringQuery } from "url";
+import { stringify } from "@angular/compiler/src/util";
 
 export class Satellite {
     name: string;
@@ -6,8 +6,8 @@ export class Satellite {
     type: string;
     operational: boolean;
     launchDate: string;
-    constructor(name: string, type:string, launchDate: string, orbitType: string, operational:boolean){
-
-    };
+    constructor(name: string, type: string, launchDate: string, orbitType: string, operational: boolean){
+        
     
-};
+    }
+}
