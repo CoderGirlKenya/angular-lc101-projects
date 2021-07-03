@@ -4,11 +4,12 @@
 }
 
 .warning {
-    background-color: #da8a8a;
+    background-color: royalblue;
+
 }
 
 table {
-  color: #111;
+  color: magenta;
   border-radius: 5px;
   overflow: hidden;
   margin: 12px 0;

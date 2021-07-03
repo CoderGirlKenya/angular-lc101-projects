@@ -8,5 +8,12 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr *ngFor = "let source of sourceList">{{source[0]}}</tr>
+    <tr *ngFor = "let satellite of satellites">
+        <td class = "sortable">{{satellite.name}}</td>
+        <td class = "sortable">{{satellite.type}}</td>
+        <td>{{satellite.operational}}</td>
+        <td>{{satellite.orbitType}}</td>
+        <td>{{satellite.launchDate}}</td> 
+    </tr>
+
 </table>
