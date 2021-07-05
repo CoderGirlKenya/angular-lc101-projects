@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { Satellite } from '../satellite';
 
 @Component({
@@ -8,12 +8,13 @@ import { Satellite } from '../satellite';
 })
 export class OrbitListComponent implements OnInit {
   @Input() satellites: Satellite[];
-  
+//   column:string[]=[];
   
   constructor() { }
 
   ngOnInit() {
   }
+  @HostListener("click")
   sort(column: string): void {
     // array.sort modifies the array, sorting the items based on the given compare function
     this.satellites.sort(function(a: Satellite, b: Satellite): number {
